@@ -1,0 +1,28 @@
+Bu proje, bireysel olarak geliştirilen ve öğrencinin kendisini ve memleketini tanıttığı kişisel bir web sitesi oluşturmayı amaçlamaktadır. Web sitesi Bootstrap ile responsive tasarlanmalı ve HTML, CSS, JavaScript, PHP gibi teknolojiler kullanılmalıdır. 
+Proje içeriği:
+
+ 1. Hakkında (Ana Sayfa):
+Sayfa sahibi hakkında kişisel bilgiler 
+ 2. CV (Özgeçmiş):
+Eğitim bilgileri semantic HTML etiketleri kullanılarak gösterilecektir.
+
+3. Şehrim:
+Memleketimiz veya sevdiğimiz bir şehir tanıtılacaktır.
+
+Nüfus, gezilecek yerler gibi bilgiler yer alacaktır.
+6. Login Sayfası:
+Kullanıcı adı: b24XXXXXXXX@sakarya.edu.tr
+
+Şifre: b24XXXXXXXX
+
+PHP ile POST edilen veriler kontrol edilecektir.
+
+Başarılı girişte "Hoşgeldiniz" mesajı gösterilecek, başarısız girişte tekrar giriş sayfasına yönlendirme yapılacaktır.
+bir tanede iletişim sayfası olmalı.
+Bootstrap ile responsive yapı kullanılacaktır.
+
+Hazır tema kullanılmayacaktır.
+
+GitHub’da proje herkese açık olmalı, farklı günlerde en az 10 commit yapılmalıdır.
+
+Proje, internet üzerinden erişilebilir olacak şekilde ücretsiz bir hosting servisine yüklenmelidir.
