@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Sayfası</title>
+  <style>
+    body { font-family: Arial; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    form { border: 1px solid #ccc; padding: 30px; border-radius: 10px; background-color: #f4f4f4; }
+    input { display: block; width: 100%; margin-bottom: 10px; padding: 8px; }
+  </style>
+</head>
+<body>
+  <form method="POST" action="kontrol.php" onsubmit="return validateForm()">
+    <h2>Login</h2>
+    <label for="kullanici">Kullanıcı Adı (Mail):</label>
+    <input type="text" id="kullanici" name="kullanici" required>
+
+    <label for="sifre">Şifre:</label>
+    <input type="password" id="sifre" name="sifre" required>
+
+    <input type="submit" value="Giriş Yap">
+  </form>
+
+  <script>
+    function validateForm() {
+      const kullanici = document.getElementById('kullanici').value;
+      const sifre = document.getElementById('sifre').value;
+
+      if (!kullanici || !sifre) {
+        alert("Tüm alanları doldurun.");
+        return false;
+      }
+
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@sakarya\.edu\.tr$/;
+      if (!emailPattern.test(kullanici)) {
+        alert("Geçerli bir Sakarya mail adresi girin.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>
