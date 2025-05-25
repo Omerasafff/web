@@ -1,0 +1,118 @@
+ <style>
+    body {
+        font-family: 'Roboto', sans-serif; /* Daha modern bir font */
+        background-color: #f0f2f5; /* Daha yumuşak bir arka plan */
+        color: #212529; /* Daha koyu metin rengi */
+        padding-top: 20px; /* Navbar altı boşluk */
+        padding-bottom: 80px; /* Footer için boşluk */
+    }
+    /* Navbar link spacing */
+    .navbar-nav .nav-item {
+        margin: 0 5px; /* Add horizontal margin between nav items */
+    }
+     /* Ensure nav links themselves have proper padding */
+    .navbar-nav .nav-item .nav-link {
+         padding: 10px 15px; /* Navbar linklerine daha fazla padding */
+         transition: color 0.3s ease-in-out; /* Hover efekti */
+    }
+     .navbar-nav .nav-link:hover {
+        color: #cccccc; /* Hover rengi */
+    }
+
+    header {
+        background-color: #0056b3 !important; /* Başlıkla uyumlu mavi tonu */
+        color: white;
+        text-align: center;
+        padding: 25px !important; /* Biraz daha fazla padding */
+        margin-bottom: 30px; /* Space below header */
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Hafif gölge */
+    }
+     header h1 {
+        color: white; /* Başlığın beyaz kalması */
+        font-size: 32px; /* Başlık boyutu */
+     }
+    footer {
+        background-color: #343a40 !important; /* Koyu arka plan */
+        color: white;
+        text-align: center;
+        padding: 20px !important; /* Ensure padding */
+        margin-top: 40px; /* Space above footer */
+        position: relative; /* Footer'ın içeriğe göre konumlanması */
+        bottom: 0;
+        width: 100%;
+    }
+     footer p {
+        margin-bottom: 0;
+        color: white; /* Footer metninin görünür olması */
+    }
+    section {
+        margin-bottom: 30px;
+        padding: 25px; /* Biraz daha fazla padding */
+        background-color: #ffffff; /* Beyaz kart */
+        border-radius: 10px; /* Daha yuvarlak köşeler */
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Daha belirgin gölge */
+    }
+    article {
+        margin-bottom: 20px; /* Article arası boşluk */
+        padding-bottom: 20px; /* Article altı boşluk */
+        border-bottom: 1px solid #eee; /* Hafif ayırıcı çizgi */
+    }
+    article:last-child {
+        border-bottom: none;
+        margin-bottom: 0; /* No margin on last item */
+        padding-bottom: 0; /* No padding on last item */
+    }
+    article h4 {
+        color: #007bff; /* Mavi renk */
+        margin-bottom: 8px; /* Daha fazla boşluk */
+        font-size: 18px; /* Başlık boyutu */
+    }
+    article p {
+        margin-bottom: 0; /* No margin below the last paragraph in an article */
+        line-height: 1.6; /* Daha iyi okunabilirlik */
+    }
+    main .container { /* Style the main container specifically */
+         background-color: transparent; /* Container background should be transparent */
+         padding: 0; /* Remove container padding */
+         box-shadow: none; /* Remove container shadow */
+    }
+     /* Navbar Toggle Button */
+    .navbar-toggler {
+        border-color: rgba(255,255,255,.1); /* Kenarlık rengi */
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        body {
+            padding-top: 10px;
+        }
+        section {
+            padding: 15px;
+        }
+        header {
+            padding: 20px !important;
+            margin-bottom: 20px;
+        }
+         header h1 {
+            font-size: 28px;
+         }
+        article h4 {
+            font-size: 16px;
+        }
+         .navbar-nav .nav-item {
+            margin: 0; /* Mobil görünümde kenar boşluğunu kaldır */
+         }
+         .navbar-nav .nav-link {
+            padding: 8px 15px; /* Mobil görünümde dikey boşluğu ayarla */
+         }
+         .navbar-collapse {
+             text-align: center; /* Mobil menüyü ortala */
+         }
+         .navbar-nav {
+            align-items: center; /* Mobil menü öğelerini ortala */
+         }
+    }
+  </style> 
